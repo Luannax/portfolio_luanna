@@ -4,7 +4,7 @@
 [![Status do Repositório](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/Luannax/portfolio_luanna)
 [![Site Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://portfolio-luanna.vercel.app/)
 [![Autor](https://img.shields.io/badge/Author-LuannaBahia-purple.svg)](https://www.instagram.com/luannabahia_/)
-[![Último lançamento](https://img.shields.io/badge/Latest%20Release-11%20Jan%202024-yellow.svg)](https://github.com/Luannax/portfolio_luanna)
+[![Último lançamento](https://img.shields.io/badge/Latest%20Release-16%20Fev%202025-yellow.svg)](https://github.com/Luannax/portfolio_luanna)
 <a href="https://github.com/Luannax.github.io/blob/master/LICENSE"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
 
 :star: Marque-me no GitHub — isso ajuda!
