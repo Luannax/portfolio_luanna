@@ -1,16 +1,3 @@
-//  
-// ██╗░░░██╗██╗███╗░░██╗░█████╗░██████╗░
-// ██║░░░██║██║████╗░██║██╔══██╗██╔══██╗
-// ╚██╗░██╔╝██║██╔██╗██║██║░░██║██║░░██║
-// ░╚████╔╝░██║██║╚████║██║░░██║██║░░██║
-// ░░╚██╔╝░░██║██║░╚███║╚█████╔╝██████╔╝
-// ░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚════╝░╚═════╝░
-// ░░░░░██╗░█████╗░███╗░░██╗░██████╗░██╗██████╗░
-// ░░░░░██║██╔══██╗████╗░██║██╔════╝░██║██╔══██╗
-// ░░░░░██║███████║██╔██╗██║██║░░██╗░██║██║░░██║
-// ██╗░░██║██╔══██║██║╚████║██║░░╚██╗██║██║░░██║
-// ╚█████╔╝██║░░██║██║░╚███║╚██████╔╝██║██████╔╝
-// ░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝╚═════╝░
 
 // preloader script............
 var audio = document.getElementById("audioPlayer");
@@ -117,10 +104,7 @@ function scrolltoTopfunction(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-// document.addEventListener("contextmenu", function (e){
-//   e.preventDefault();
-// }, false);
-// https://github.com/vinodjangid07
+
 document.addEventListener("contextmenu", function(e){
   if (e.target.nodeName === "IMG") {
       e.preventDefault();
