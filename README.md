@@ -1,36 +1,32 @@
-# <a href="https://portfolio-luanna.vercel.app/" target="_blank">My Portfolio</a>
-<p align="justify">This website displays my Projects, Web presence, Story, Work experience, and contact information.</p>
+# <a href="https://portfolio-luanna.vercel.app/" target="_blank">Meu Portfólio</a>
+<p align="justify">Este site exibe meus Projetos, presença na Web, História, experiência de trabalho e informações de contato.</p>
 
-[![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/Luannax/portfolio_luanna)
-[![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://portfolio-luanna.vercel.app/)
-[![Author](https://img.shields.io/badge/Author-Vinod%20Jangid-purple.svg)](https://www.instagram.com/luannabahia_/)
-[![Latest Release](https://img.shields.io/badge/Latest%20Release-11%20Jan%202024-yellow.svg)](https://github.com/Luannax/portfolio_luanna)
-<a href="https://github.com/vinodjangid07/vinodjangid07.github.io/blob/master/LICENSE"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
+[![Status do Repositório](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/Luannax/portfolio_luanna)
+[![Site Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://portfolio-luanna.vercel.app/)
+[![Autor](https://img.shields.io/badge/Author-LuannaBahia-purple.svg)](https://www.instagram.com/luannabahia_/)
+[![Último lançamento](https://img.shields.io/badge/Latest%20Release-11%20Jan%202024-yellow.svg)](https://github.com/Luannax/portfolio_luanna)
+<a href="https://github.com/Luannax.github.io/blob/master/LICENSE"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
 
+:star: Marque-me no GitHub — isso ajuda!
 
+# Seções 📚
 
-:star: Star me on GitHub — it helps!
+✔️ Mini introdução\
+✔️ Sobre mim \
+✔️ Habilidades\
+✔️ Projetos\
+✔️ Entre em contato comigo
 
-# Sections 📚
+## Instalação e implantação 📦
+- Clone o repositório e modifique o conteúdo de <b>index.html</b> de acordo com sua necessidade.
+- Adicione ou remova imagens do diretório `https://www.luannabahia.me/src/` de acordo com sua necessidade.
 
-✔️ Mini intro\
-✔️ About me \
-✔️ Skills\
-✔️ Projects\
-✔️ Contact me
+## Licença 📄
+Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE.md](./LICENSE) para obter detalhes.
 
-## Installation & Deployment 📦
-- Clone the repository and modify the content of <b>index.html</b> according to your requirement.
-- Add or remove images from `https://www.vinodjangid.me/src/` directory as per your requirement.
+## Ferramentas usadas 🛠️
+* [<b>GitHub</b>](https://github.com/) - Para hospedar meu site estático (HTML, CSS, JS).
+* [<b>Biblioteca Animate on scroll</b>](https://github.com/michalsnik/aos) - Para animar meu site enquanto rola.
+* [<b>Animista</b>](https://animista.net/) - Para usar animações interativas
 
-
-## License 📄
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
-
-## Tools Used 🛠️
-* [<b>GitHub</b>](https://github.com/) - To host my static website (HTML, CSS, JS).
-* [<b>Animate on scroll library</b>](https://github.com/michalsnik/aos) - To animate my website while scrolling.
-* [<b>Animista</b>](https://animista.net/) - To use Interactive animations
-
-
-Please contact me at luannabahia1@gmail.com if you have any feedback for the website. :star: Star it, if you like it!
+Entre em contato comigo em luannabahia1@gmail.com se tiver algum feedback para o site. :star: Marque uma estrela se gostar!
