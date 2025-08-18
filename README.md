@@ -1,32 +1,66 @@
-# <a href="https://portfolio-luanna.vercel.app/" target="_blank">Meu Portfólio</a>
-<p align="justify">Este site exibe meus Projetos, presença na Web, História, experiência de trabalho e informações de contato.</p>
+# 🚀 Portfólio Luanna Bahia
 
 [![Status do Repositório](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/Luannax/portfolio_luanna)
 [![Site Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://portfolio-luanna.vercel.app/)
 [![Autor](https://img.shields.io/badge/Author-LuannaBahia-purple.svg)](https://www.instagram.com/luannabahia_/)
 [![Último lançamento](https://img.shields.io/badge/Latest%20Release-16%20Fev%202025-yellow.svg)](https://github.com/Luannax/portfolio_luanna)
-<a href="https://github.com/Luannax.github.io/blob/master/LICENSE"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
+[![Licença](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](./LICENSE)
 
-:star: Marque-me no GitHub — isso ajuda!
+<p align="center">
+  <a href="https://portfolio-luanna.vercel.app/" target="_blank">
+    <img src="src/png/avatarfooterme.png" width="120" alt="Avatar"/>
+  </a>
+</p>
 
-# Seções 📚
+<p align="center"><b>Meu portfólio pessoal: projetos, habilidades, trajetória e contato.</b></p>
 
-✔️ Mini introdução\
-✔️ Sobre mim \
-✔️ Habilidades\
-✔️ Projetos\
-✔️ Entre em contato comigo
+---
 
-## Instalação e implantação 📦
-- Clone o repositório e modifique o conteúdo de <b>index.html</b> de acordo com sua necessidade.
-- Adicione ou remova imagens do diretório `https://www.luannabahia.me/src/` de acordo com sua necessidade.
+## ✨ Preview
 
-## Licença 📄
-Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE.md](./LICENSE) para obter detalhes.
+Acesse: [portfolio-luanna.vercel.app](https://portfolio-luanna.vercel.app/)
 
-## Ferramentas usadas 🛠️
-* [<b>GitHub</b>](https://github.com/) - Para hospedar meu site estático (HTML, CSS, JS).
-* [<b>Biblioteca Animate on scroll</b>](https://github.com/michalsnik/aos) - Para animar meu site enquanto rola.
-* [<b>Animista</b>](https://animista.net/) - Para usar animações interativas
+---
 
-Entre em contato comigo em luannabahia1@gmail.com se tiver algum feedback para o site. :star: Marque uma estrela se gostar!
+## 📋 Funcionalidades
+- Mini introdução
+- Sobre mim
+- Habilidades
+- Projetos
+- Contato
+
+---
+
+## 🚀 Tecnologias & Ferramentas
+- HTML5, CSS3, JavaScript
+- [AOS - Animate on Scroll](https://github.com/michalsnik/aos)
+- [Animista](https://animista.net/)
+- GitHub Pages / Vercel
+
+---
+
+## 🛠️ Como rodar localmente
+```bash
+# Clone o repositório
+$ git clone https://github.com/Luannax/portfolio_luanna.git
+
+# Entre na pasta
+$ cd portfolio_luanna
+
+# Abra o index.html no navegador
+```
+
+Você pode editar o arquivo `index.html` e personalizar as imagens na pasta `src/`.
+
+---
+
+## 📄 Licença
+Projeto sob licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
+
+---
+
+## 📬 Contato
+- Email: luannabahia1@gmail.com
+- Instagram: [@luannabahia_](https://www.instagram.com/luannabahia_/)
+
+⭐ Se gostou, marque uma estrela no repositório!
