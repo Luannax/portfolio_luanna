@@ -916,6 +916,10 @@ noscript{
 }
 .dp img{
     width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
 }
 .dp::before{
     content: "";
@@ -1122,141 +1126,566 @@ noscript{
 .project-boxes-div{
     width: 100%;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+    /* Melhor suporte para diferentes telas */
+    container-type: inline-size;
 }
+
 .project-box-wrapper{
     width: 100%;
+    max-width: 400px;
+    height: 100%;
+    /* Garante que não haja overflow */
+    min-width: 0;
 }
+
 .project-box{
-    /* background-color: rgba(255, 255, 255, 0.005); */
-    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color),var(--tech-stack-box-second-color));
+    background: linear-gradient(145deg, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
     width: 100%;
-    height: 400px;
+    height: 480px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    transition-duration: .3s;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
-    /* box-shadow: 0px 10px 20px var(--color-shadowDark); */
-    border-radius: 30px;
+    border-radius: 20px;
     border: 1px solid var(--tech-stack-box-border-color);
     overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    /* Garante responsividade em qualquer tela */
+    min-height: 350px;
+}
+
+.project-box:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: #ff8800;
+}
+
+.image-div{
+    width: 100%;
+    height: 55%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    flex-shrink: 0;
+}
+
+.image-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 136, 0, 0.1), rgba(255, 136, 0, 0.05));
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.project-box:hover .image-div::before {
+    opacity: 0;
+}
+
+.image-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-box:hover .image-div img {
+    transform: scale(1.05);
 }
 
 .info-div{
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 40px;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    flex-shrink: 0;
 }
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
 .faviconforProject{
-    width: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
+    border: 2px solid #ff8800;
+    padding: 2px;
+    flex-shrink: 0;
 }
-.faviconforProjectAquaregia{
-    width: 20px;
-}
-.image-div{
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    padding-top: 70px;
-    padding-left: 10px;
-   
-}
-.image-div img{
-    height: 100%;
-    border-top-left-radius:30px;
-}
+
 .ProjectHeading{
     color: var(--color-white);
-    font-size: 3.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    flex: 1;
 }
+
 .ProjectDescription{
-    color: gray;
-    font-size: 1.7rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.3rem;
     font-weight: 400;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
 }
-/* Project visit button */
+
 .project-buttons{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 5px;
 }
+
 .github-redirect{
- text-decoration: none;    
- width: 50px;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    flex-shrink: 0;
 }
+
+.github-redirect:hover {
+    background: rgba(255, 136, 0, 0.2);
+    transform: scale(1.05);
+}
+
 .github-redirect img{
-    width: 45px;
-    height: auto;
-    transition: all .3s;
+    width: 20px;
+    height: 20px;
     filter: brightness(2);
+    transition: all 0.3s ease;
 }
+
 .github-redirect:hover img{
-    filter: brightness(4);
+    filter: brightness(3);
 }
+
 .cta {
     position: relative;
-    padding: 12px 18px;
-    transition: all 0.2s ease;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
     border: none;
-    background: none;
+    background: linear-gradient(45deg, #ff8800, #ff6600);
     cursor: pointer;
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-   }
-   
-   .cta::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    background: #4e412b;
-    /* background-color: var(--color-navbarBorder-dark); */
-    width: 45px;
-    height: 45px;
-    transition: all 0.3s ease;
-   }
-   
-   .cta span {
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 136, 0, 0.3);
+    flex: 1;
+    max-width: 140px;
+}
+
+.cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 136, 0, 0.4);
+    background: linear-gradient(45deg, #ff9900, #ff7700);
+}
+
+.cta::before {
+    display: none;
+}
+
+.cta span {
     position: relative;
-    /* font-family: "Ubuntu", sans-serif; */
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.05em;
-    /* color: #234567; */
-    color: var(--color-light-blue);
-   }
-   
-   .cta svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    /* stroke: #234567; */
-    stroke: var(--color-light-blue);
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-   }
+    color: white;
+}
+
+.cta svg {
+    margin-left: 6px;
+    stroke: white;
+    transition: transform 0.3s ease;
+    width: 12px;
+    height: 12px;
+}
+
+.cta:hover svg {
+    transform: translateX(2px);
+}
+
+/* ==========================================
+   📱 RESPONSIVIDADE COMPLETA DOS PROJETOS
+   ========================================== */
+
+/* Extra Large devices (1400px e acima) */
+@media (min-width: 1400px) {
+    .project-boxes-div {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1600px;
+        gap: 30px;
+    }
+}
+
+/* Large devices (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .project-boxes-div {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        gap: 25px;
+    }
+}
+
+/* Medium devices (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .project-boxes-div {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1000px;
+        gap: 15px;
+        padding: 20px 15px;
+    }
+    
+    .project-box {
+        height: 460px;
+    }
+    
+    .ProjectHeading {
+        font-size: 1.8rem;
+    }
+    
+    .ProjectDescription {
+        font-size: 1.4rem;
+    }
+}
+
+/* Small devices - Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .project-boxes-div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 18px 12px;
+        max-width: 800px;
+    }
+    
+    .project-box {
+        height: 440px;
+    }
+    
+    .ProjectHeading {
+        font-size: 1.7rem;
+        line-height: 1.1;
+    }
+    
+    .ProjectDescription {
+        font-size: 1.8rem;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+    
+    .info-div {
+        padding: 18px;
+    }
+    
+    .cta {
+        max-width: 130px;
+        padding: 9px 18px;
+    }
+    
+    .cta span {
+        font-size: 1.3rem;
+    }
+    
+    .faviconforProject {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Extra Small devices - Mobile (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .project-boxes-div {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 15px 8px;
+        max-width: 500px;
+    }
+    
+    .project-box {
+        height: 420px;
+        max-width: 100%;
+    }
+    
+    .ProjectHeading {
+        font-size: 1.6rem;
+        line-height: 1.1;
+    }
+    
+    .ProjectDescription {
+        font-size: 1.2rem;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        line-height: 1.3;
+    }
+    
+    .info-div {
+        padding: 16px;
+    }
+    
+    .project-header {
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .project-buttons {
+        gap: 12px;
+    }
+    
+    .cta {
+        max-width: 125px;
+        padding: 8px 16px;
+    }
+    
+    .cta span {
+        font-size: 1.2rem;
+    }
+    
+    .github-redirect {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .github-redirect img {
+        width: 19px;
+        height: 19px;
+    }
+    
+    .faviconforProject {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Very Small devices - Small Mobile (até 575px) */
+@media (max-width: 575px) {
+    .project-boxes-div {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 12px 6px;
+        max-width: 100%;
+    }
+    
+    .project-box {
+        height: 400px;
+        margin: 0 5px;
+    }
+    
+    .image-div {
+        height: 50%;
+    }
+    
+    .info-div {
+        height: 50%;
+        padding: 14px;
+        gap: 8px;
+    }
+    
+    .project-header {
+        gap: 6px;
+        margin-bottom: 6px;
+    }
+    
+    .ProjectHeading {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+    
+    .ProjectDescription {
+        font-size: 1.1rem;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        line-height: 1.2;
+    }
+    
+    .project-buttons {
+        gap: 10px;
+        margin-top: 8px;
+    }
+    
+    .cta {
+        max-width: 115px;
+        padding: 7px 14px;
+    }
+    
+    .cta span {
+        font-size: 1.1rem;
+    }
+    
+    .cta svg {
+        width: 10px;
+        height: 10px;
+        margin-left: 4px;
+    }
+    
+    .github-redirect {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .github-redirect img {
+        width: 17px;
+        height: 17px;
+    }
+    
+    .faviconforProject {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Landscape orientation for small devices */
+@media (max-width: 767px) and (orientation: landscape) {
+    .project-box {
+        height: 350px;
+    }
+    
+    .image-div {
+        height: 55%;
+    }
+    
+    .info-div {
+        height: 45%;
+        padding: 12px;
+    }
+    
+    .ProjectDescription {
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .project-box {
+        border-width: 0.5px;
+    }
+    
+    .github-redirect img,
+    .faviconforProject {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Ultra Small devices - Very Small Mobile (até 320px) */
+@media (max-width: 320px) {
+    .project-boxes-div {
+        padding: 20px 5px;
+        gap: 15px;
+    }
+    
+    .project-box {
+        height: 380px;
+        margin: 0;
+        border-radius: 15px;
+    }
+    
+    .image-div {
+        height: 45%;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .info-div {
+        height: 55%;
+        padding: 12px;
+        gap: 6px;
+    }
+    
+    .ProjectHeading {
+        font-size: 1.3rem;
+        line-height: 1.0;
+    }
+    
+    .ProjectDescription {
+        font-size: 0.95rem;
+        line-height: 1.1;
+    }
+    
+    .project-buttons {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+    
+    .cta {
+        max-width: 100%;
+        padding: 6px 12px;
+        justify-content: center;
+    }
+    
+    .cta span {
+        font-size: 1.0rem;
+    }
+    
+    .github-redirect {
+        width: 32px;
+        height: 32px;
+        align-self: center;
+    }
+    
+    .faviconforProject {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Container Queries para suporte moderno */
+@container (max-width: 300px) {
+    .project-box {
+        height: 360px;
+    }
+    
+    .ProjectHeading {
+        font-size: 1.2rem;
+    }
+    
+    .ProjectDescription {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================== 
+   FIM DA SEÇÃO DE PROJETOS 
+   ========================================== */
 
    .cta:hover:before {
     width: 100%;
