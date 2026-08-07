@@ -1,876 +1,121 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC99CCXS6M"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-MC99CCXS6M');
-  </script>
-
-  <meta name="google-site-verification" content="zMNl24ruDnyqiliYwKNU_r09OkPCDKz0kMBtF9nqiCc" />
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#000" />
-  <meta name="description"
-    content="Luanna Bahia | Portfolio, Computer Science student. Web Developer. Passionate about creating intuitive and functional web interfaces.." />
-  <meta name="keywords"
-    content="Luanna Bahia,Luanna Bahia portfolio,Luanna Bahia Portfolio,Luannabahia,luanna bahia site,Luanna Bahia Site,luanna bahia me,luanna bahia web,luanna bahia github,luannabahia site,luannabahia uiverse,uiverse,luanna bahia uiverse,luanna bahia frontend developer,frontend developer,Luanna bahia da silva,luanna silva" />
-  <meta name="author" content="Luanna Bahia" />
-  <meta property="og:title" content="Luanna Bahia | Portfólio" />
-  <meta property="og:description"
-    content="Hi! My name is Luanna. I'm a web developer. Visit and know about me & my projects. Passionate about creating intuitive and functional web interfaces." />
-  <meta property="og:url" content="#" />
-  <meta property="og:site_name" content="Luanna Bahia Portfolio" />
-  <meta name="twitter:site" content="@Portfolio" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Luanna Bahia | Portfolio" />
-  <meta name="twitter:description"
-    content="Hi! My name is Luanna. I'm a web developer. Visit and know about me & my projects. Passionate about creating intuitive and functional web interfaces." />
-
-  <title>Luanna Bahia | Portfólio</title>
-
-  <link rel="icon" type="image/x-icon" href="src/png/avatarfooterme-removebg.png" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./media.css">
-  <!-- google fonts-->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Luanna Bahia, desenvolvedora de software Full Stack especializada em React, TypeScript, PHP, Python e APIs REST.">
+  <meta name="theme-color" content="#0b0d12">
+  <meta property="og:title" content="Luanna Bahia — Desenvolvedora Full Stack">
+  <meta property="og:description" content="Sistemas web, APIs e produtos digitais construídos para resolver problemas reais.">
+  <title>Luanna Bahia — Desenvolvedora Full Stack</title>
+  <link rel="icon" href="src/png/avatarfooterme-removebg.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="body">
-  <audio loop="" id="audioPlayer" style="display: none">
-    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
-  </audio>
-  <div id="preloader"></div>
-  <noscript>Allow Javascript</noscript>
-
-  <!-- header ends here -->
-  <header>
-    <div class="cursor-inner" id="cursor-inner"></div>
-    <div class="cursor-outer" id="cursor-outer"></div>
-
-    <div class="navbar" id="navbar">
-      <div class="hey">Oie!></div>
-      <div class="logo" tabindex="0" aria-label="luanna bahia logo">
-        <div class="logo-top">
-          <img src="src/png/iconsemfundome.png" alt="animation-head" id="nav-avatar" />
-        </div>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Ir para o início"><span>LB</span> Luanna Bahia</a>
+      <button class="menu-button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a>
       </div>
-      <div class="navbar-tabs" id="navbar-tabs">
-        <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
-            <a href="#home" tabindex="0" aria-label="Home menu button">
-              &#60;/Inicío&#62;
-            </a>
-          </li>
-
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
-            <a href="#about" aria-label="about menu button">
-              &#60;/Sobre Mim&#62;
-            </a>
-          </li>
-
-          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
-            <a href="#skills" aria-label="skills menu button">
-              &#60;/Habilidades&#62;
-            </a>
-          </li>
-
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-            <a href="#projects" aria-label="projects menu button">
-              &#60;/Projetos&#62;
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- navbar tabs -->
-    </div>
+      <a class="button button-small nav-cta" href="src/pdf/Curriculo_Luanna_Bahia.pdf" target="_blank" rel="noopener">Currículo <span aria-hidden="true">↗</span></a>
+    </nav>
   </header>
 
-
-  <main>
-    <!-- hamburger -->
-    <div class="hamburger" id="hamburger" data-aos="fade">
-      <div class="hamburgerbase">
-        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
-          <span class="burger-bar" id="burger-bar1"></span>
-          <span class="burger-bar" id="burger-bar2"></span>
-          <span class="burger-bar" id="burger-bar3"></span>
-        </button>
-      </div>
-    </div>
-
-    <!-- hamburger ends here -->
-    <div class="mobiletogglemenu" id="mobiletogglemenu">
-      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Inicío&#62;
-          </a>
-        </li>
-
-        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">
-            &#60;/Sobre Mim&#62;
-          </a>
-        </li>
-        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">
-            &#60;/Habilidades&#62;
-          </a>
-        </li>
-        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">
-            &#60;/Projetos&#62;
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- mobile toggle menu ends -->
-
-    <section class="landing-page-container" id="home">
-      <div class="blob"></div>
-
-      <div class="text-content">
-        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
-          <p class="jello">O</p>
-          <p class="jello">l</p>
-          <p class="jello">á</p>
-          <p class="jello">(</p>
-          <p class="jello">)</p>
-          <p class="jello">;</p>
-          &nbsp;
-          <p class="jello">E</p>
-          <p class="jello">u</p>
-          &nbsp;
-          <p class="jello">s</p>
-          <p class="jello">o</p>
-          <p class="jello">u</p>
-        </article>
-        <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">L</p>
-          <p class="jello">u</p>
-          <p class="jello">a</p>
-          <p class="jello">n</p>
-          <p class="jello">n</p>
-          <p class="jello">a</p>
-          &nbsp;
-          <p class="jello">B</p>
-          <p class="jello">a</p>
-          <p class="jello">h</p>
-          <p class="jello">i</p>
-          <p class="jello">a</p>
-          <p class="jello">.</p>
-        </article>
-
-        <article id="work" data-aos="fade-up" data-aos-delay="400">
-          <div>
-            <p class="jello">D</p>
-            <p class="jello">e</p>
-            <p class="jello">s</p>
-            <p class="jello">e</p>
-            <p class="jello">n</p>
-            <p class="jello">v</p>
-            <p class="jello">o</p>
-            <p class="jello">l</p>
-            <p class="jello">v</p>
-            <p class="jello">e</p>
-            <p class="jello">d</p>
-            <p class="jello">o</p>
-            <p class="jello">r</p>
-            <p class="jello">a</p>
-          </div>
-          <div>
-            <p class="jello">S</p>
-            <p class="jello">o</p>
-            <p class="jello">f</p>
-            <p class="jello">t</p>
-            <p class="jello">w</p>
-            <p class="jello">a</p>
-            <p class="jello">r</p>
-            <p class="jello">e</p>
-          </div>
-        </article>
-        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          Desenvolvedora Full Stack<br />
-          <br />
-          Focada em criar soluções escaláveis, integrações de API e interfaces modernas para resolver problemas reais de negócios.
-        </p>
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:luannabahia1@gmail.com" tabindex="-1">
-            <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Entre em Contato!</p>
-              <span class="letsTalkBtn-BG"></span>
-            </button></a>
-          <div class="setting-container" id="setting-container">
-            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
-
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
-              aria-label="settings for sound and appearance"></label>
-
-            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
-              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
-              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
-                aria-label="switch appearance"></label>
-            </div>
-
-            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
-              <input type="checkbox" id="switchforsound" onclick="playpause()" />
-              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
-                class="needtobeinvert"></label>
-            </div>
-          </div>
-          <!-- setting div ends -->
+  <main id="conteudo">
+    <section class="hero container" id="inicio">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> Disponível para novas oportunidades</div>
+        <h1>Transformo ideias em <em>software que funciona.</em></h1>
+        <p class="hero-text">Desenvolvedora Full Stack focada em sistemas web, APIs e interfaces modernas — da regra de negócio à entrega.</p>
+        <div class="hero-actions">
+          <a class="button" href="#projetos">Conheça meu trabalho <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="mailto:luannabahia1@gmail.com">luannabahia1@gmail.com <span aria-hidden="true">↗</span></a>
         </div>
-        <!-- contact-btn-div -->
       </div>
-
+      <aside class="hero-card reveal" aria-label="Resumo profissional">
+        <div class="portrait-wrap"><img src="src/png/avatarfooterme-removebg.png" alt="Avatar ilustrado de Luanna Bahia"></div>
+        <div class="hero-card-copy"><strong>Luanna Bahia</strong><span>Full Stack Developer</span></div>
+        <div class="availability"><span>Arenápolis, MT</span><span>Remoto · Brasil</span></div>
+      </aside>
+      <div class="hero-meta reveal">
+        <div><span>01</span><p>React · TypeScript<br>JavaScript</p></div>
+        <div><span>02</span><p>PHP · Python<br>APIs REST</p></div>
+        <div><span>03</span><p>MySQL · PostgreSQL<br>Supabase</p></div>
+      </div>
     </section>
 
-    <!-- about section ends -->
-    <section class="about-section-container" id="about" data-aos="fade-up">
-      <div class="about-section">
-        <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/Sobre Mim&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-
-        <div class="info-dp-section">
-          <div class="about-info">
-            <p tabindex="0">
-              Olá! Sou Luanna, Desenvolvedora de Software Full Stack.
-              Graduada em Ciência da Computação (Dez/2025), combino a base técnica da engenharia de software com a agilidade do desenvolvimento web moderno.
-            </p>
-            <br />
-            <p tabindex="0">
-              Tenho experiência prática no desenvolvimento de sistemas corporativos utilizando <strong>PHP, SQL e Integrações de API</strong>, além de criar interfaces dinâmicas com <strong>React.js e o ecossistema JavaScript</strong>.
-            </p>
-            <br />
-            <p tabindex="0">
-              Meu foco atual é transformar necessidades complexas em códigos limpos e funcionais, seja automatizando processos financeiros ou criando plataformas de gestão. Estou pronta para entregar valor real através da tecnologia.
-            </p>
-            <button class="resume-btn" id="resume-btn" onclick="openURL()">
-              <div class="sign">
-                <svg viewBox="0 0 640 512">
-                  <path
-                    d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 
-                    111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 
-                    70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 
-                    39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-                </svg>
-              </div>
-              <div class="text">Currículo</div>
-            </button>
-          </div>
-
-          <div class="dp" data-aos="fade-up">
-            <img src="./src/eu/eu_.jpg" alt="Luanna Bahia" tabindex="0" aria-label="image of Luanna" />
-          </div>
+    <section class="section container" id="sobre">
+      <div class="section-label reveal"><span>01</span> Sobre mim</div>
+      <div class="about-grid">
+        <h2 class="reveal">Tecnologia com contexto, código com propósito.</h2>
+        <div class="about-copy reveal">
+          <p>Sou bacharel em Ciência da Computação pela UNEMAT e pós-graduanda em Engenharia de Software. Desenvolvo sistemas corporativos e produtos digitais usando React, TypeScript, PHP, Python e bancos relacionais.</p>
+          <p>Gosto de entender o problema por inteiro: converso com quem usa, organizo regras de negócio e construo soluções claras, responsivas e sustentáveis.</p>
+          <div class="quick-facts"><span>Bacharel em Ciência da Computação</span><span>Pós em Engenharia de Software</span><span>Experiência B2B e freelancer</span></div>
         </div>
       </div>
     </section>
 
-    <!-- skills section ends -->
-    <section class="skills-section-container" id="skills">
-      <div class="skills-section">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Habilidades&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-
-        <div class="frontend-dev-section">
-          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
-            aria-label="As a frontend a developer these are the skills i have">
-            Tecnologias
-          </h3>
-          <ul class="tech-stack-wrapper">
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
-              <span class="tooltip">HTML</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/csslogo.png" alt="css skill" class="tech-stack-logo" />
-              <span class="tooltip">CSS</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens//bootstraplogo.png" alt="bootstrap skill" class="tech-stack-logo" />
-              <span class="tooltip">BOOTSTRAP</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/jslogo.png" alt="js skill" class="tech-stack-logo" />
-              <span class="tooltip">JS</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/nodejs.png" alt="node js skill" class="tech-stack-logo" />
-              <span class="tooltip">NODE JS</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/reactlogo.png" alt="react skill" class="tech-stack-logo" />
-              <span class="tooltip">REACT</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/python.png" alt="python language skill" class="tech-stack-logo" />
-              <span class="tooltip">PYTHON</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/php.png" alt="php language skill" class="tech-stack-logo" />
-              <span class="tooltip">PHP</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/sql.png" alt="sql language skill" class="tech-stack-logo" />
-              <span class="tooltip">SQL</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
-              <span class="tooltip">GITHUB</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/gitlogo.png" alt="git skill" class="tech-stack-logo" />
-              <span class="tooltip">GIT</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/mysqlfront.png" alt="mysqlfront language skill" class="tech-stack-logo" />
-              <span class="tooltip">MYSQL - FRONT</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/firebase.png" alt="firebase banco de dados skill" class="tech-stack-logo" />
-              <span class="tooltip">Firebase</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/vscode.png" alt="c++ language skill" class="tech-stack-logo" />
-              <span class="tooltip">VS CODE</span>
-            </li>
-
-             <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/dw.png" alt="dw language skill" class="tech-stack-logo" />
-              <span class="tooltip">DREAMWEAVER</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/canvalogo.png" alt="canva skill" class="tech-stack-logo" />
-              <span class="tooltip">CANVA</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/vercel.png" alt="vercel skill" class="tech-stack-logo" />
-              <span class="tooltip">VERCEL</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/netlify.png" alt="netlify skill" class="tech-stack-logo" />
-              <span class="tooltip">NETLIFY</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/virtualbox.png" alt="virtual box skill" class="tech-stack-logo" />
-              <span class="tooltip">Virtual Box</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/win11.png" alt="windows skill" class="tech-stack-logo" />
-              <span class="tooltip">WINDOWS 11</span>
-            </li>
-
-            <!--<li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/linguagens/linuxmint.png" alt="linux skill" class="tech-stack-logo" />
-              <span class="tooltip">LINUX MINT</span>
-            </li>-->
-          </ul>
+    <section class="section experience-section" id="experiencia">
+      <div class="container">
+        <div class="section-label reveal"><span>02</span> Experiência</div>
+        <div class="experience-list">
+          <article class="experience-item reveal"><div class="experience-date">2025 — agora</div><div><h3>Desenvolvedora Full Stack</h3><p class="company">Dinâmika Cursos e Sistemas</p></div><p>Sistemas corporativos com PHP, MySQL e JavaScript; integrações REST, automações, Docker e evolução de interfaces responsivas.</p></article>
+          <article class="experience-item reveal"><div class="experience-date">2023 — agora</div><div><h3>Desenvolvedora Freelancer</h3><p class="company">Autônoma</p></div><p>Soluções sob demanda para clientes reais: gestão clínica, gestão empresarial e aplicações com React, TypeScript, Flask e Supabase.</p></article>
+          <article class="experience-item reveal"><div class="experience-date">2023 — 2025</div><div><h3>Desenvolvedora Web · Bolsista</h3><p class="company">EmpreendaMT / UNEMAT</p></div><p>Desenvolvimento, manutenção e evolução do portal, suporte técnico e atualização de conteúdo da plataforma.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- projects section starts -->
-    <section class="projects-section-container" id="projects">
-      <div class="projects-section-div">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-            &#60;/Projetos&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
+    <section class="section container" id="projetos">
+      <div class="projects-heading reveal"><div class="section-label"><span>03</span> Projetos selecionados</div><h2>Trabalho recente</h2><p>Uma seleção de produtos que unem interface, dados e regras de negócio.</p></div>
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-image"><img src="src/projweb/sistema_gestao.jpeg" alt="Interface do Sistema de Gestão Empresarial"></div>
+          <div class="project-content"><div class="project-number">01 · FREELANCER</div><h3>Sistema de Gestão Empresarial</h3><p>Plataforma com gestão de clientes, pedidos e fornecedores, níveis de acesso, dashboards e exportação de relatórios.</p><ul class="tags"><li>JavaScript</li><li>Supabase</li><li>PostgreSQL</li><li>Bootstrap</li></ul><a class="project-link" href="https://github.com/Luannax/sistema_empresa" target="_blank" rel="noopener">Ver projeto no GitHub <span>↗</span></a></div>
+        </article>
+        <article class="project-card reveal"><div class="project-content"><div class="project-number">02 · PRODUTO B2B</div><h3>Plataforma de Gestão Ambiental</h3><p>Gestão documental, submissão e avaliação de projetos, perfis de acesso, uploads e recuperação de senha.</p><ul class="tags"><li>Python</li><li>FastAPI</li><li>MySQL</li><li>REST API</li></ul><span class="project-note">Projeto profissional · código privado</span></div></article>
+        <article class="project-card reveal"><div class="project-content"><div class="project-number">03 · FREELANCER</div><h3>FisioFlow</h3><p>Sistema de gestão clínica com prontuários, avaliações, agenda, pagamentos e confirmações via WhatsApp.</p><ul class="tags"><li>Flask</li><li>SQLAlchemy</li><li>MySQL</li><li>Python</li></ul><span class="project-note">Projeto para cliente · código privado</span></div></article>
+        <article class="project-card reveal"><div class="project-content"><div class="project-number">04 · INTEGRAÇÃO</div><h3>PIX e Boletos Sicredi</h3><p>Integração financeira para autenticação, cobrança, emissão de boletos e automação de pagamentos.</p><ul class="tags"><li>JavaScript</li><li>jQuery</li><li>REST API</li><li>Postman</li></ul><a class="project-link" href="https://github.com/Luannax/Gestao-de-Boleto-Api-Sicredi" target="_blank" rel="noopener">Ver no GitHub <span>↗</span></a></div></article>
+      </div>
+      <div class="all-projects reveal"><a class="button button-outline" href="https://github.com/Luannax?tab=repositories" target="_blank" rel="noopener">Explorar todos os projetos <span>↗</span></a></div>
+    </section>
+
+    <section class="section skills-section">
+      <div class="container skills-grid"><div class="reveal"><div class="section-label"><span>04</span> Stack</div><h2>Ferramentas que uso para construir.</h2></div><div class="skill-groups reveal"><div><h3>Front-end</h3><p>React · TypeScript · JavaScript · HTML · CSS · Tailwind · Bootstrap · Vite</p></div><div><h3>Back-end</h3><p>PHP · Python · FastAPI · Flask · Node.js · APIs REST · SQLAlchemy</p></div><div><h3>Dados & entrega</h3><p>MySQL · PostgreSQL · Supabase · Firebase · Docker · Git · Postman · Vercel</p></div></div></div>
+    </section>
+
+    <section class="contact-section" id="contato">
+      <div class="container contact-inner reveal">
+        <div class="contact-copy">
+          <div class="section-label"><span>05</span> Vamos conversar</div>
+          <h2>Boas ideias começam com uma conversa.</h2>
+          <p>Estou aberta a oportunidades, projetos e colaborações. Se você procura alguém que entenda o problema e transforme isso em software, me chama.</p>
         </div>
-        <div class="project-boxes-div">
-
-          <!-- Sistema de Gestão Empresarial -->
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="image-div">
-                <img src="src/projweb/sistema_gestao.jpeg" alt="Sistema de Gestão preview image" />
-              </div>
-              <div class="info-div">
-                <div class="project-header">
-                  <img src="src/png/avatarfooterme.png" alt="Sistema de Gestão Empresarial" class="faviconforProject" />
-                  <article class="ProjectHeading">Sistema de Gestão Agropecuária</article>
-                </div>
-                <p class="ProjectDescription">
-                  Sistema completo de gestão empresarial desenvolvido para otimizar processos administrativos. 
-                  Inclui módulos de controle de estoque, vendas, relatórios e dashboard gerencial.
-                </p>
-                <div class="project-buttons">
-                  <a href="#" target="_blank"
-                    class="github-redirect" aria-label="Visit Sistema de Gestão no GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://github.com/Luannax" target="_blank" class="cta"
-                    aria-label="Ver Sistema de Gestão Live">
-                    <span>Ver</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
+        <div class="contact-card">
+          <div class="contact-card-top">
+            <span class="contact-kicker">Contato direto</span>
+            <span class="contact-status"><i></i> Disponível</span>
           </div>
-
-          <!-- IdeWeb - Editor Acessível -->
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="image-div">
-                <img src="src/projweb/ideweb.png" alt="IdeWeb preview image" />
-              </div>
-              <div class="info-div">
-                <div class="project-header">
-                  <img src="src/png/avatarfooterme.png" alt="IDE Web para Estágio" class="faviconforProject" />
-                  <article class="ProjectHeading">IdeWeb - Editor Acessível</article>
-                </div>
-                <p class="ProjectDescription">
-                  Editor de código online desenvolvido em grupo durante os estágios da faculdade, focado na acessibilidade 
-                  para pessoas com deficiência visual. Ele será finalizado por mim no TCC 2 para apresentação.
-                </p>
-                <div class="project-buttons">
-                  <a href="#" target="_blank"
-                    class="github-redirect" aria-label="Visit IdeWeb no GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://github.com/Luannax" target="_blank" class="cta"
-                    aria-label="Ver IdeWeb Live">
-                    <span>Ver</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <a class="contact-action" href="mailto:luannabahia1@gmail.com">
+            <span><small>E-mail</small>luannabahia1@gmail.com</span><strong aria-hidden="true">↗</strong>
+          </a>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/luannabahia/" target="_blank" rel="noopener"><span>LinkedIn</span><strong>↗</strong></a>
+            <a href="https://github.com/Luannax" target="_blank" rel="noopener"><span>GitHub</span><strong>↗</strong></a>
+            <a href="src/pdf/Curriculo_Luanna_Bahia.pdf" target="_blank" rel="noopener"><span>Currículo</span><strong>↗</strong></a>
           </div>
-
-          <!-- Renibio - E-commerce Natural -->
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="image-div">
-                <img src="src/projweb/site_renibio.jpeg" alt="Renibio website preview image" />
-              </div>
-              <div class="info-div">
-                <div class="project-header">
-                  <img src="src/png/avatarfooterme.png" alt="Site Renibio" class="faviconforProject" />
-                  <article class="ProjectHeading">Renibio - E-commerce Natural</article>
-                </div>
-                <p class="ProjectDescription">
-                  Site freelancer desenvolvido para a Renibio, especializada na venda de produtos naturais sob encomenda. 
-                  Plataforma responsiva com sistema de catálogo e pedidos personalizados.
-                </p>
-                <div class="project-buttons">
-                  <a href="#" target="_blank"
-                    class="github-redirect" aria-label="Visit Renibio no GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://github.com/Luannax" target="_blank" class="cta"
-                    aria-label="Ver Renibio Live">
-                    <span>Ver</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Calculadora de Probabilidade -->
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="image-div">
-                <img src="src/projweb/projetocalproba.jpeg" alt="Calculadora de Probabilidade preview image" />
-              </div>
-              <div class="info-div">
-                <div class="project-header">
-                  <img src="src/png/avatarfooterme.png" alt="Calculadora de Probabilidade" class="faviconforProject" />
-                  <article class="ProjectHeading">Calculadora de Probabilidade</article>
-                </div>
-                <p class="ProjectDescription">
-                  Aplicativo de linha de comando que permite calcular probabilidade de sucesso de projetos com base em orçamento e complexidade.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/Luannax/Calculadora_de_Probabilidade" target="_blank"
-                    class="github-redirect" aria-label="Visit CalcProbab on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://github.com/Luannax/Calculadora_de_Probabilidade" target="_blank" class="cta"
-                    aria-label="Visit CalcProbab Live">
-                    <span>Ver</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ---------------------- -->
-          <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box5" id="project-box5">
-              <div class="image-div">
-                <img src="src/projweb/projetoempreendamt.png" alt="comickaze website preview image" />
-              </div>
-              <div class="info-div">
-                <img src="src/png/avatarfooterme.png" alt="Site de empreendimento." class="faviconforProject" />
-                <article class="ProjectHeading">Empreendamt</article>
-                <p class="ProjectDescription">
-                  Site de negócios desenvolvido para o projeto da faculdade.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/Luannax/site-empreendamt" target="_blank" class="github-redirect"
-                    aria-label="Visit Empreendamt on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://empreendamt-luannax.vercel.app/" target="_blank" class="cta"
-                    aria-label="Visit Empreendamt live">
-                    <span>Ver</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ---------------------- -->
-          <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box5" id="project-box5">
-              <div class="image-div">
-                <img src="src/projweb/projetocadaspy.png" alt="codigo do Cadastro preview image" />
-              </div>
-              <div class="info-div">
-                <img src="src/png/avatarfooterme.png" alt="Cadastro de clientes para uma loja em py."
-                  class="faviconforProject" />
-                <article class="ProjectHeading">Terminal: Registro de clientes</article>
-                <p class="ProjectDescription">
-                  Algoritmo desenvolvido na faculdade em Python para cadastrar clientes de uma loja,
-                  Não possui interface, só é possível utilizar pelo terminal.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/Luannax/Cadastro-de-Clientes-para-uma-Loja" target="_blank"
-                    class="github-redirect" aria-label="Visit Cadastro-de-Clientes-para-uma-Loja on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://github.com/Luannax/Cadastro-de-Clientes-para-uma-Loja" target="_blank" class="cta"
-                    aria-label="Visit Cadastro-de-Clientes-para-uma-Loja live">
-                    <span>Ver</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ---------------------- -->
-          <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box5" id="project-box5">
-              <div class="image-div">
-                <img src="src/projweb/projebuscep.png" alt="buscador de cep website preview image" />
-              </div>
-              <div class="info-div">
-                <img src="src/png/avatarfooterme.png" alt="Buscado de cep usando api." class="faviconforProject" />
-                <article class="ProjectHeading">Localizador de código postal</article>
-                <p class="ProjectDescription">
-                  Site para pesquisar o código postal usando api no react.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/Luannax/buscador-de-cep" target="_blank" class="github-redirect"
-                    aria-label="VisitBuscador de cep on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://buscador-de-cep-flame.vercel.app/" target="_blank" class="cta"
-                    aria-label="Visit buscador de cep live">
-                    <span>Ver</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ---------------------- -->
-          <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box5" id="project-box5">
-              <div class="image-div">
-                <img src="src/projweb/projegerentranspor.png" alt="gerenciador-de-transportes website preview image" />
-              </div>
-              <div class="info-div">
-                <img src="src/png/avatarfooterme.png" alt="Gerenciador de transportes" class="faviconforProject" />
-                <article class="ProjectHeading">Gerenciador de transporte</article>
-                <p class="ProjectDescription">
-                  Transport Manager é uma ferramenta para gerenciar informações de transporte.
-                  O código HTML fornecido pode ser usado para criar um formulário de registro de informações de gerenciamento
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/Luannax/Gerenciador-de-Transportes" target="_blank"
-                    class="github-redirect" aria-label="Visit Gerenciador-de-Transportes GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://gerenciador-de-transportes.vercel.app/" target="_blank" class="cta"
-                    aria-label="Visit Gerenciador-de-Transportes live">
-                    <span>Ver</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ---------------------- -->
-          <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box5" id="project-box5">
-              <div class="image-div">
-                <img src="src/projweb/projetgelateria.png" alt="sorveteria website preview image" />
-              </div>
-              <div class="info-div">
-                <img src="src/png/avatarfooterme.png" alt="Site de uma sorveteria" class="faviconforProject" />
-                <article class="ProjectHeading">Site de Sorveteria</article>
-                <p class="ProjectDescription">
-                  Site para uma sorveteria. Desenvolvido com ReactJS na DevMedia.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/Luannax/Gelateria" target="_blank" class="github-redirect"
-                    aria-label="Visit Sorveteria GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://gelateria-khaki.vercel.app/" target="_blank" class="cta"
-                    aria-label="Visit Sorveteria live">
-                    <span>Ver</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ---------------------- -->
-          <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box5" id="project-box5">
-              <div class="image-div">
-                <img src="src/projweb/projetsistemalogin.png"
-                  alt="SistemaControleparaGerenciamentodeClientes website preview image" />
-              </div>
-              <div class="info-div">
-                <img src="src/png/avatarfooterme.png" alt="Site de login" class="faviconforProject" />
-                <article class="ProjectHeading">Sistema de controle de clientes com tela de login</article>
-                <p class="ProjectDescription">
-                  Sistema de controle de clientes com tela de login, feito para gerenciamento de clientes.
-                  Você pode adicionar o nome do cliente, e-mail, celular e cidade, aplicando modos.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/Luannax/SistemaControleparaGerenciamentodeClientes" target="_blank"
-                    class="github-redirect" aria-label="Visit SistemaControleparaGerenciamentodeClientes GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://sistema-controle-cadastro-clientes.vercel.app/" target="_blank" class="cta"
-                    aria-label="Visit SistemaControleparaGerenciamentodeClientes live">
-                    <span>Ver</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ---------------------- -->
-          <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box5" id="project-box5">
-              <div class="image-div">
-                <img src="src/projweb/projetsiscotfarma.png" alt="Sistema de cotação website preview image" />
-              </div>
-              <div class="info-div">
-                <img src="src/png/avatarfooterme.png" alt="Sistema de cotação" class="faviconforProject" />
-                <article class="ProjectHeading">SISCOTFARMA</article>
-                <p class="ProjectDescription">
-                  O SISCOTFARMA é um sistema web colaborativo que permite a cotação
-                  de medicamentos em tempo real entre vários usuários conectados na mesma rede, tornando o horário do servidor
-                  o principal, modificando
-                  todos os clientes para o mesmo do servidor através da sincronização do relógio. (SEU CÓDIGO FONTE NÃO SERÁ
-                  DIVULGADO, ESTÁ SOB MINHA LICENÇA
-                  DE DIREITOS AUTORAIS)
-                </p>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
   </main>
-
-  <!-- footer -->
-  <footer id="footer">
-    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
-      <article aria-label="Back to top">&#8592; Inicío</article>
-    </button>
-    <div class="footer-background">
-      <div class="footer-blob"></div>
-    </div>
-    <div class="footer-foreground">
-      <div class="footercontainer">
-        <div class="two-words">
-          <article tabindex="0"
-            aria-label="A questão não é conhecer os códigos, mas entender o que fazer com eles.">
-            "A questão não é conhecer os códigos,<br>mas entender o que fazer com eles."
-          </article>
-        </div>
-        <div class="social-media-container">
-          <div class="getintouch-heading">
-            <article>Entre o contato();</article>
-          </div>
-          <div class="logos">
-            <a href="https://www.instagram.com/luannabahia_" target="_blank" tabindex="0" aria-label="My instagram"><svg
-                viewBox="0 0 448 512" class="SocialHandle">
-                <path
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-              </svg></a>
-
-            <a href="https://www.linkedin.com/in/luannabahia/" target="_blank" aria-label="My Linkdin"><svg
-                class="SocialHandle" viewBox="0 0 448 512">
-                <path
-                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-              </svg></a>
-
-            <a href="https://github.com/Luannax" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
-                class="SocialHandle">
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-              </svg></a>
-
-            <a href="mailto:luannabahia1@gmail.com" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
-                viewBox="0 0 512 512">
-                <path
-                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-              </svg></a>
-          </div>
-        </div>
-        <div class="footer-avatar-container">
-          <img src="src/png/iconfooter.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar" />
-          <!--
-          <div class="footer-avatar-face">
-            <div class="footer-avatar-eye footer-left-eye">
-              <div class="footer-pupil"></div>
-            </div>
-            <div class="footer-avatar-eye footer-right-eye">
-              <div class="footer-pupil"></div>
-            </div>
-          </div>
-          -->
-        </div>
-        <div class="footer-bottom">
-          <article>
-            Desenvolvedora web/software por Luanna Bahia
-            &#169; 2025
-          </article>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  <footer><div class="container"><span>© <span id="year"></span> Luanna Bahia</span><span>Desenvolvido com intenção e café.</span></div></footer>
   <script src="main.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script>
-    function openURL() {
-      var url = "https://drive.google.com/file/d/1YPq6JdEBuV9To2eu0YJURJDV3UNOyL1Y/view?usp=sharing";
-      window.open(url, "_blank");
-    }
-  </script>
-  <script>
-    const cursorInner = document.getElementById("cursor-inner");
-    const cursorOuter = document.getElementById("cursor-outer");
-    const links = document.querySelectorAll("a,label,button");
-
-    document.addEventListener("mousemove", function (e) {
-      const posX = e.clientX;
-      const posY = e.clientY;
-
-      cursorInner.style.left = `${posX}px`;
-      cursorInner.style.top = `${posY}px`;
-
-      cursorOuter.animate(
-        {
-          left: `${posX}px`,
-          top: `${posY}px`,
-        },
-        { duration: 500, fill: "forwards" }
-      );
-
-
-      links.forEach((link) => {
-        link.addEventListener("mouseenter", () => {
-          cursorInner.classList.add("hover");
-          cursorOuter.classList.add("hover");
-        });
-        link.addEventListener("mouseleave", () => {
-          cursorInner.classList.remove("hover");
-          cursorOuter.classList.remove("hover");
-        });
-      });
-    });
-  </script>
 </body>
 </html>
